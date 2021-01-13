@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
   end
 
   def example_3_create
-    render json: { comment: ActionController::Base.helpers.sanitize(params[:comment]) }
-    # render json: { comment: params[:comment] }
+    # render json: { comment: ActionController::Base.helpers.sanitize(params[:comment]) }
+    render json: { comment: params[:comment] }
   end
 end
