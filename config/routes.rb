@@ -1,5 +1,6 @@
 
 Rails.application.routes.draw do
+  root :to => redirect('/example_1')
   get 'example_1', to: 'application#example_1'
   get 'example_2', to: 'application#example_2'
   get 'example_3', to: 'application#example_3'
